@@ -1,0 +1,33 @@
+=== Module classification automatique et traitement du langage
+
+==== Descriptions
+
+===== Classification multiclasse:
+
+Perceptron multicouche
+
+===== Recommandation:
+
+User-Based Collaborative Filtering:
+
+* L'algorithme de recommandation récupère les likes et les mentions "ne m'intéresse pas" des utilisateurs depuis la BDD.
+
+* Il construit ensuite une matrice utilisateur x projet qui regroupe ces informations sous forme de notes (like=1/1, ne m'intéresse pas=0/1).
+
+* Il calcule ensuite la similitude entre les utilisateurs en utilisant la distance MSD.
+
+* Il donne un score de recommandation pour les couples utilisateurs x projet compris entre 0 et 1. 
+
+==== Avancement
+
+Mise en place de la classification multiclasse
+
+Mise en place de la recommandation
+
+==== Bibliographie spécifique
+
+https://developers.google.com/machine-learning/guides/text-classification
+
+https://scikit-learn.org/stable/modules/generated/sklearn.multiclass.OneVsRestClassifier.html
+
+https://blog.cambridgespark.com/nowadays-recommender-systems-are-used-to-personalize-your-experience-on-the-web-telling-you-what-120f39b89c3c

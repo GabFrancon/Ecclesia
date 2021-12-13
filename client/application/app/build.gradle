@@ -1,0 +1,84 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\gabfr\\Documents\\Projets\\PACT\\Depot_GIT\\pact23\\client\\application\\EcclesiaKeyStore.jks')
+            storePassword 'ecclesia'
+            keyAlias 'e_cclesia'
+            keyPassword 'ecclesia'
+        }
+    }
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.ecclesia"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // Read the API key from gradle.properties into R.string.maps_api_key
+        resValue "string", "maps_api_key", (project.findProperty("GOOGLE_MAPS_API_KEY") ?: "")
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.facebook.android:facebook-login:5.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.2.3'
+    implementation 'com.r0adkll:slidableactivity:2.0.6'
+    api 'io.jsonwebtoken:jjwt-api:0.11.2'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.2'
+    runtimeOnly('io.jsonwebtoken:jjwt-orgjson:0.11.2')
+            {
+                exclude group: 'org.json', module: 'json' //provided by Android natively//
+            }
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.dinuscxj:recyclerrefreshlayout:2.0.5'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+    implementation 'com.google.android.material:material:1.3.0+'
+    implementation 'com.android.support:multidex:1.0.3'
+
+}

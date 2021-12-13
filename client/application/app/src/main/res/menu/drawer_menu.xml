@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:background="@color/white_ecclesia">
+
+    <group
+        android:id="@+id/group_profile"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_pin_24"
+            android:title="Mon profil" />
+
+        <item
+            android:id="@+id/nav_preferences"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="Mes préférences" />
+
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_baseline_people_24"
+            android:title="Mes contacts" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Paramètres" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:title="Se déconnecter" />
+    </group>
+
+</menu>

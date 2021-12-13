@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SettingsActivity"
+    android:orientation="vertical"
+    android:background="@color/white_ecclesia">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/kameron"
+            android:textSize="20sp"
+            android:textColor="@color/grey_ecclesia"
+            android:text="Géolocalisation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Switch
+            android:id="@+id/geolocationSwitch"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_ecclesia"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/kameron"
+            android:textSize="20sp"
+            android:textColor="@color/grey_ecclesia"
+            android:text="Notifications"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Switch
+            android:id="@+id/notificationSwitch"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_ecclesia"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/change_email_button"
+        android:layout_width="match_parent"
+        android:foreground="@drawable/ripple_effect"
+        android:clickable="true"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Changer d'email"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey_ecclesia"
+            android:textSize="20sp"
+            android:fontFamily="@font/kameron"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_chevron_right_24"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_ecclesia" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/change_password_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:foreground="@drawable/ripple_effect"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:text="Changer de mot de passe"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey_ecclesia"
+            android:textSize="20sp"
+            android:fontFamily="@font/kameron"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_chevron_right_24"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_ecclesia"/>
+
+</LinearLayout>

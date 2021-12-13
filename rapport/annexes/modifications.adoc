@@ -1,0 +1,7 @@
+=== Modifications du rapport (PAN2+)
+
+* Ajout de la planification des tâches par module durant le PAN2, PAN3 et PAN4 (partie 4.1)
+
+* Ajout des plans de test (partie 4.3)
+
+* Ajout des annexes par module (partie 5)

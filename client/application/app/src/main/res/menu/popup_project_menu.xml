@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_archive"
+        android:icon="@drawable/ic_favorite"
+        android:title="Ajouter aux favoris" />
+
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/ic_share"
+        android:title="Partager à un ami" />
+
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_hide"
+        android:title="Ne plus me proposer" />
+</menu>

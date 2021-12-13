@@ -1,0 +1,15 @@
+Fonctionnalités à intégrer à l’appli :
+
+    • Créer/modifier son profil utilisateur
+
+    • Synchroniser/actualiser ses amis E-cclesia avec sa liste d’amis Facebook  : extraire, trier, puis recenser dans la BDD
+
+    •  Liker/disliker un projet (info à transmettre à recommandation et BDD)
+
+    • Commenter un projet (visible par tous les utilisateurs)
+
+    • Partager un projet à un ami (sous forme de notification chez un utilisateur spécifique)
+
+    • Recevoir une proposition de projet par un ami  (info à envoyer à interface Android)
+
+    • Créer un projet sur l’application (public ou réservé aux amis) (optionnel)

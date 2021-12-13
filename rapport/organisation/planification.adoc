@@ -1,0 +1,273 @@
+=== Planning temporel PACT (PAN1, PAN2, PAN3, PAN4)
+
+==== Taches / PAN1 04/11/2020
+
+===== Générales
+
+* rapport:
+
+[cols=",^,^,,",options="header",]
+|====
+|Tâche |Qui |Quand |Fait |Remarques
+|Sujet |Jade |01/11/2020 |x |
+|Sujet en anglais |Jade |01/11/2020 |x |
+|Description de la proposition + 
+                                 État de l'art| Estelle|01/11/2020|x |
+|Scénario |Estelle - Jade |Octobre |x |En collaboration avec le groupe
+|Architecture (schéma et documentation) |Youssef - Loïc - Gabriel - Pascal |Octobre-Novembre |x |En collaboration avec le groupe
+|Storyboard | Guilhem - Antoine - Pascal | Octobre-Novembre|x|En collaboration avec le groupe
+|Découpage en modules |Tout le groupe |Octobre-Novembre |x |
+|Planning temporel (ce document, personnalisé) |Tout le groupe |Octobre-Novembre |x |
+|====
+
+* présentation 15mn
+
+[cols=",^,^,,",options="header",]
+|====
+|Tâche |Qui |Quand |Fait |Remarques
+|Préparation du document |Guilhem |Novembre |x |En collaboration avec le groupe
+|Répartition de la parole |Tout le groupe |Novembre |x |
+|Répétition |Tout le groupe |Novembre |x |
+|====
+
+==== Taches / PAN2 29/01/21
+
+===== Générales
+
+* rapport
+
+* Prendre rdv avec vos experts pour le PAN2
+
+
+===== Modules
+
+* Android
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Installation de l’outil Android Studio |Début PAN2 |x |
+|TP Android |Début PAN2 |x | TP + cours vidéo sur Youtube (Graven), comprendre le fonctionnement de Android Studio
+|Design du squelette d’application |Courant PAN2 |x | Navigation entre les pages de l'application, choix d'utiliser des fragments
+|Affichage de la carte (API Google Maps)|Courant PAN2 |x | Dans un projet Android à part, pas encore intégré au reste
+|Plan de test |Fin PAN2 |x |
+|====
+
+* Base de données
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Concertation avec les autres modules pour le choix des données à stocker| |x|
+|Construction du diagramme Entités/Relations| |x|
+|Définition des méthodes utiles pour la manipulation des données| |x|
+|====
+
+* Communication client-serveur
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Concertation avec les autres modules pour prévoir les différentes requetes à implementer| |x|
+|Construction d'un schéma des communications | |x|
+|Début de codage d'un prototype de serveur java| |x|
+|====
+
+* Classification&Recommandation
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Classification multiclasse | |x |
+|Commencement de la recommandation | |x |
+|====
+
+
+* SES
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Préparation et réalisation d'entretiens longs avec des utilisateurs potentiels | Courant PAN2 |x |2 entretiens
+|Lecture de 2 articles : "Comment la conversation a façonné le web" et "Sortir avec des inconnus grâce à Internet : une manière de se faire des amis ?" | Courant PAN2 |x |
+|Conception d'un sondage destiné à connaître les pratiques sociales des utilisateurs potentiels de notre application | Courant PAN2 |x |
+|====
+
+
+* Social
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Renseignements sur l'API mise à disposition par Facebook| |x|
+|Création de l'application et d'un compte développeur sur Facebook Developer| |x|
+|Apprentissage de l'environnement Android Studio| |x|
+|Construction du diagramme d'activité définissant le déroulement de l'inscription à E-cclesia et du login| |x|
+|====
+
+* Tests & intégrations
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Apprentissage de Git et mise au point d'un guide Git pour le groupe|Courant PAN2 |x|
+|Créatiion d'une branche par module|Courant PAN2 |x|
+|Etablissement du plan de test et intégration|Courant PAN2 |x|
+|Concertation avec tous les modules pour suivre l'avancée de chacun|Courant PAN2 |x|
+|====
+
+
+==== Tâches / PAN3 12/04/21
+
+===== Générales
+
+* Préparer un déroulé de la démo et du "matériel" de démo
+
+===== Modules
+
+* Android
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Intégration de la carte dans l'application |Début PAN3 |x |Comprendre la répartition du code entre fragments et activités
+|GUI |Courant PAN3|x |Créer le contenu de toutes les pages de l'application et établir un design global pour l'application
+|Implémentation du défiler de la liste des projets |Semaine PACT|x |Données des projets chargées à partir de la BDD, comprendre le fonctionnement des bundles
+|Ajout du système de like d'un projet |Semaine PACT|x |Mise à jour du like dans la BDD
+|Enregistrement ou suppression d’un projet de la liste |Semaine PACT|x |Pas encore d'affichage des projets favoris dans la "bibliothèque" de l'utilisateur, communiquer le résultat à la BDD
+|Ajout du choix des préférences de centres d'intérêts |Semaine PACT|x |Pas encore modifiable, mais comprendre le bon fonctionnement pour utiliser simultanément des checkboxes et des recycler views
+|Communication des données avec la BDD via le serveur |Semaine PACT |x |Comprendre comment parser les données d'un JSON
+|Ajout d'animations pour l'application |Semaine PACT |x | 
+|Test |Semaine PACT |x | Tests faits manuellement
+|====
+
+
+* Base de données
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Révision et approfondissement des connaissances en langage MySQL et PHP| |x|
+|Implémentation des tables sur le serveur LAMP en MySQL| |x|
+|Ecriture des requêtes SQL correspondant aux méthodes précédemment définies| |x|
+|Implémentation de l'API pour travailler sur la base de données en PHP : Informations projets, Profils, Social graph, Classification, Préférences utilisateur| |x|
+|====
+
+* Communication client-serveur
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Developpement en collaboration avec le module base de données| |x| Abandon du serveur java au profit d'un serveur PHP
+|Implémentation du serveur sur machine virtuelle| |x|
+|Ecriture de libraries en python et en java permettant de simplifier la communication avec le serveur| |x|
+|====
+
+* SES
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Poursuite des entretiens avec des utilisateurs potentiels aux profils les plus variés possibles, mise en forme des compte-rendus et début d'exploitation des résultats | Courant PAN3|x |
+|Lecture et analyse de 2 articles : "Mobilités et rencontres dans les espaces publics urbains à l'âge des médias positionnels" de Christian Licoppe et "Figures mobiles : une anthropologie du smartphone" de Nicolas Nova | Semaine PACT |x |
+|Exploitation des résultats et mise en commun avec le reste du groupe pour l'adaptation et l'enrichissement des fonctionnalités de l'application | Semaine PACT |x |
+|====
+
+* Social
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Design des pages de login et d'inscription sous Android Studio|Courant PAN3 |x|
+|Implémentation du système d'inscription/connexion hors Facebook|Semaine PACT |x|
+|Ajout des dépendances pour appeler l'API Facebook et implémentation de l'inscription/connexion via Facebook|Semaine PACT |x|
+|Récupération de la liste d'amis Facebook| | |Nouvelles normes de sécurité Facebook ne permettent l'accès à cette fonctionnalité qu'après livraison d'une app fonctionnelle vérifiable par l'équipe Facebook -> abandonnée
+|Création d'un social graph pour ajouter/consulter/supprimer des amis sur l'app en collaboration avec le module base de données|Courant PAN3 |x|
+|Design et implémentation de la page profil de l'app|Semaine PACT |x|
+|Implémentation du système de likes|Semaine PACT |x|
+|====
+
+* Tests & intégrations
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Réorganisation de l'architecture du Git pour préparer l'intégration|Courant PAN3 |x|3 branches restantes : master, Client, Server et répartir les modules dans Client ou Serveur
+|Intégration des différents modules|Semaine PACT |x|
+|Concertation avec tous les modules pour suivre l'avancée de chacun|Courant PAN3, Semaine PACT |x|
+|Tests d'intégration |Semaine PACT|x|Tests faits manuellement, tests côté serveur, côté client et tests entre les deux
+|====
+
+
+==== Tâches / PAN4 31/05/21
+
+===== Générales
+
+* poster pour le stand
+* présentation 4 slides
+* rapport: avancement, rapports de test
+* présentation et rapport pour la séance PACT-SES
+
+===== Modules
+
+* Android
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Implémentation du swipe de projet en projet |Courant PAN4 |x |
+|Ajout de la possibilité de modifier les préférences de centres d'intérêts |Courant PAN4|x |Affichage des préférences de l'utilisateur et possibilité de les modifier 
+|Modification du design de l'affichage des projets |Courant PAN4 |x |
+|Localisation des projets proches de l'utilisateur et affichage sur la map via l'API Geocoding de Google Maps|Courant PAN4 |x|
+|Threads pour optimisation de la navigation |Courant PAN4 |x |
+|Test |A chaque nouvelle feature |x |Tests faits manuellement
+|====
+
+* Base de données
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Expansion de l'API en accord avec les nouvelles fonctionnalités demandées par les autres modules : Demandes d'ami, Recommandation, Partage de projets, Extraction des projets selon différents critères pour l'onglet "Sélection" et pour "Découvrir"|Courant PAN4 |x|
+|Acquisition de connaissances sur les Stateless Authentification et la représentation JWT pour rendre l'accès à la base de données sécurisé|Courant PAN4 |x|
+|Rajout de la création et de l'envoi d'un jwt lorsque l'utilisateur se connecte à l'app|Courant PAN4 |x|
+|Rajout de la vérification du token et de l'extraction de l'ID utilisateur lors de chaque appel au serveur|Courant PAN4 |x|
+|====
+
+* Communication client-serveur
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Modification des libraries pour implémenter le JWT |Courant PAN4 |x|
+|====
+
+* SES
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Poursuite et fin des entretiens avec des utilisateurs potentiels de l'application, dernières exploitations des résultats et mise en commun | Courant PAN4 |x |
+|====
+
+* Social
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Implémentation de la fonctionnalité de partage d'un projet à un ami|Courant PAN4 |x|
+|Design et implémentation des notifications de partage et de demande d'ami en utilisant la base de données|Courant PAN4 |x|
+|Récupération et affichage particulier des nouvelles notifications à chaque ouverture de l'app|Courant PAN4 |x|
+|Ajout de notifications push pour avertir l'utilisateur d'une nouvelle notification ou de la sélection d'un nouveau projet pour lui|Courant PAN4 |Nécessite de créer l'app sur le serveur Google dédié à l'envoi des notifs push et donc la vérification de l'app par Google, non implémenté par manque de temps
+|====
+
+* Tests & intégrations
+
+[cols=",^,^,",options="header",]
+|====
+|Tâche |Quand |Fait |Remarques
+|Intégration continuelle des différents modules|Courant PAN4 |x| 
+|Concertation avec tous les modules pour suivre l'avancée de chacun|Courant PAN4 |x|
+|Tests d'intégration |Courant PAN4|x|Tests faits manuellement, tests côté serveur, côté client et tests entre les deux
+|====
+

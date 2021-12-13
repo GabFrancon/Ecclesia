@@ -1,0 +1,301 @@
+=== Module Tests & Intégration
+
+==== Tests fonctionnels
+
+===== Test fonctionnel 1 : Carte
+
+*Scénario* : Accéder à la position de l’utilisateur sur la carte + 
+*Résultat attendu* : Affichage de la position de l’utilisateur sur la carte +
+*Initialisation* : Être sur le bouton “Carte” de la barre de navigation, GPS activé +
+*Contraintes* : Le GPS doit être fonctionnel +
+*Tests unitaires :*  +
+Action : se connecter (cf test fonctionnel 2) +
+Résultat : une fois que l’utilisateur s’est connecté, l’application le dirige sur le menu “Carte” de la barre de navigation, affiche la carte et la position actuelle de l’utilisateur
+
+===== Test fonctionnel 2 : Connexion
+
+*Scénario* : Se connecter +
+*Résultat attendu* : Être connecté  +
+*Initialisation* :  Être déconnecté  +
+*Contraintes* : Avoir déjà un compte, avoir un accès Internet +
+*Tests unitaires :*  +
+Action : ouvrir l’application +
+Résultat : après l’animation à l’ouverture de l’application, affichage d’une page avec deux champs d’entrée email et mot de passe, d’un bouton “Se connecter”, d’un bouton “Continuer avec Facebook” et d’un bouton “Se créer un compte”
+
+Cas 1 (l’utilisateur souhaite se connecter avec ses identifiants) : +
+Action : compléter les champs email et mot de passe et appuyer sur le bouton “Se connecter”  +
+Cas 2 (l’utilisateur souhaite se connecter plus rapidement avec son compte Facebook) : +
+Action : appuyer sur “Continuer avec Facebook” +
+Résultat : affichage d’une page pour souhaiter la reconnexion de l’utilisateur (“Content de vous retrouver, <nom de l’utilisateur>”, avec sa photo de profil correctement chargée et un bouton “Continuer”)
+
+Action : cliquer sur “Continuer” +
+Résultat : connexion réussie et redirection vers la carte (menu “Carte” de la barre de navigation) +
+
+===== Test fonctionnel 2 bis : Création de compte
+
+*Scénario* : Créer son compte +
+*Résultat attendu* : Avoir un compte et rester connecté  +
+*Initialisation* : L’utilisateur n’a pas déjà un compte  +
+*Contraintes* : Avoir un accès Internet +
+*Tests unitaires :*  +
+Action : ouvrir l’application  +
+Résultat : après l’animation à l’ouverture de l’application, affichage d’une page avec deux champs d’entrée identifiant et mot de passe, d’un bouton “se connecter, d’un bouton “continuer avec Facebook” et d’un bouton pour créer un compte +
+
+Cas 1 (l’utilisateur souhaite créer un compte sans passer par Facebook) : +
+Action : appuyer sur le bouton “Créer un compte” +
+Résultat : nouvelle page avec des champs à remplir pour créer le compte (nom, prénom, date de naissance, sexe, email, mot de passe) avec un bouton “S’inscrire” +
+
+Cas 2 (l’utilisateur souhaite créer un compte plus rapidement avec son compte Facebook) : +
+Action : appuyer sur “Continuer avec Facebook” +
+Résultat : préremplissage de l’email, du prénom, et nom de l’utilisateur sur la page d’informations à remplir +
+
+Action : remplir tous les champs et appuyer sur le bouton “s’inscrire” +
+Résultat : redirection vers une page pour choisir ses préférences de centres d’intérêts
+
+Action : cocher les checkboxes correspondant à ses centres d’intérêts puis appuyer sur “Enregistrer” +
+Résultat : changement de page pour choisir ses préférences de genres d’événements 
+
+Action : cocher les checkboxes correspondant à ses préférences de genres d’événements puis appuyer sur “Enregistrer” +
+Résultat : changement de page sur le menu “Carte” de la barre de navigation
+
+Note : Enregistrer les informations de l’utilisateur ainsi que ses préférences dans la base de données (gérer avec communication Client-Serveur), s’assurer de la communication des données utiles entre activités/fragments, etc (dans des bundle)
+
+===== Test fonctionnel 3 : Déconnexion
+
+*Scénario* : Se déconnecter de son compte +
+*Résultat attendu* : Être déconnecté +
+*Initialisation* : Être connecté et se trouver sur un des menus de la barre de navigation +
+*Contraintes* : Avoir internet +
+*Tests unitaires :*  +
+Action : ouvrir le menu déroulant latéral +
+Résultat : affichage du menu déroulant latéral
+
+Action : appuyer sur le bouton “Se déconnecter” +
+Résultat : referme le menu déroulant latéral pour revenir sur la page de connexion (cf test fonctionnel 2)
+
+
+===== Test fonctionnel 4 : Modification des préférences
+
+*Scénario* : Modifier les préférences de centres d’intérêts et de types de projets favoris +
+*Résultat attendu* : Modifications enregistrées dans la BDD +
+*Initialisation* : Être sur un des menus de la barre de navigation +
+*Contraintes* : Avoir un compte, être connecté et avoir internet +
+*Tests unitaires :*  +
+Action : ouvrir le menu latéral +
+Résultat : affichage du menu latéral
+
+Action : appuyer sur le bouton “Mes préférences” +
+Résultat : affichage d’une liste d’icônes pour les préférences de centres d’intérêts et d’une liste d’icônes images pour les préférences de types de projets favoris + deux icônes boutons en forme de crayon pour modifier ces préférences
+
+Action : appuyer sur l’icône en forme de crayon pour modifier les préférences +
+Résultat : affichage d’une nouvelle page avec toute la liste d’icônes des centres d’intérêts ou types de projets où les checkboxes des favoris ont déjà été cochées 
+
+Action : cocher/décocher les checkboxes selon ses préférences puis cliquer sur “Enregistrer” +
+Résultat : retour sur la page précédente et les icônes ont bien été modifiées selon les changements effectués
+
+===== Test fonctionnel 5 : Affichage des contacts
+
+*Scénario* : Accéder à la liste des contacts +
+*Résultat attendu* : Affichage de la liste des contacts +
+*Initialisation* : Être sur un des menus de la barre de navigation +
+*Contraintes* : Être connecté et avoir internet +
+*Tests unitaires :*  +
+Action : ouvrir le menu latéral +
+Résultat : affichage du menu latéral 
+
+Action : appuyer sur le bouton “Mes contacts” +
+Résultat : affichage de la liste des contacts
+
+Action : glisser de bas en haut pour faire défiler les contacts +
+Résultat : les contacts défilent sur l’écran
+
+===== Test fonctionnel 5 bis : Ajout de nouveaux contacts
+
+*Scénario* : Ajouter de nouveaux contacts +
+*Résultat attendu* : Demander un utilisateur en ami à partir d’une recherche +
+*Initialisation* : Après le test fonctionnel 5, être sur la page où sont affichés les contacts +
+*Contraintes* : Être connecté et avoir internet +
+*Tests unitaires :*  +
+Action : appuyer sur l’icône pour ajouter un contact +
+Résultat : affichage d’une barre de recherche
+
+Action : entrer le prénom de l’utilisateur +
+Résultat : affichage en fonction de la recherche, des utilisateurs enregistrés depuis la BDD 
+
+Action : appuyer sur un des contacts de la liste +
+Résultat : affichage d’une nouvelle page avec le profil de l’utilisateur et un bouton “Demander en ami”
+
+Action : appuyer sur le  bouton “Demander en ami” +
+Résultat : le bouton se transforme en un bouton “Annuler ma demande d’ami” et la demande a été effectué, l’autre utilisateur recevra une notification dans l’onglet “Notifications” de la barre de navigation lorsqu’il se connectera
+
+
+===== Test fonctionnel 6 : Modification des paramètres
+
+*Scénario* : Modifier les paramètres de notification, de changement de mail et de mot de passe +
+*Résultat attendu* : Modifications enregistrées dans la BDD +
+*Initialisation* : Être sur un des menus de la barre de navigation +
+*Contraintes* : Avoir autorisé l’application à envoyer des notifications  +
+*Tests unitaires :*  +
+Action : Ouvrir le menu latéral +
+Résultat : Affichage du menu latéral
+
+Action : appuyer sur le bouton “Paramètres” +
+Résultat : affichage d’une nouvelle page avec trois boutons pour modifier les paramètres des notifications, de changer de mail et de mot de passe
+
+Action : appuyer sur un des boutons +
+Résultat : redirection vers une nouvelle page pour modifier les paramètres en question
+
+
+
+===== Test fonctionnel 7 : Notifications
+
+*Scénario* : Accéder aux dernières activités, notifications  +
+*Résultat attendu* : Affichage de la liste des dernières notifications +
+*Initialisation* : Être sur un des menus de la barre de navigation +
+*Contraintes* : Avoir un accès Internet +
+*Tests unitaires :*  +
+Action : appuyer sur le bouton “Notifications” de la barre de navigation +
+Résultat : badge sur le bouton “notifications” qui indique des notifications non lues disparaît, affichage d’une liste de quelques notifications sur une page du téléphone
+
+Action : glisser de bas en haut pour faire défiler les notifications ou glisser vers le bas pour rafraîchir la page +
+Résultat : les notifications défilent sur le fragment central 
+
+
+*Tests fonctionnels 8-12 liés autour d’un projet*
+
+===== Test fonctionnel 8 : Liste des projets 
+
+*Scénario* : Accéder à un projet  +
+*Résultat attendu* : Affichage de la page de description d’un projet +
+*Initialisation* : Être dans un des menus de la barre de navigation +
+*Contraintes* : Avoir eu un accès Internet pour rafraîchir la liste des projets +
+*Tests unitaires :*  +
+Action : appuyer sur le bouton “Projets” de la barre de navigation +
+Résultat : affichage d’une liste de quelques projets sur une page du téléphone. Accès à différents projets selon qu’on soit dans l’onglet “Sélection” ou “Découvrir”. Lorsque l’on clique sur le menu “Projets” de la barre de navigation, on est directement dans l’onglet “Sélection” pour visualiser les projets recommandés pour l’utilisateur.
+
+Si l’on souhaite voir des projets de la BDD sans forcément de recommandation :  +
+Action : cliquer sur l’onglet “Découvrir” (en haut à droite) +
+Résultat : affichage d’une liste défilable de projets rangée par catégorie, où chaque élément de la liste est lui-même une liste défilable horizontale de projets
+
+Sinon, dans tous les cas +
+Action : glisser de bas en haut/de la droite vers la gauche pour faire défiler les projets +
+Résultat : les projets défilent sur le fragment central 
+
+Action : appuyer sur un projet de la liste +
+Résultat : un nouvel écran s’affiche avec la description du projet
+
+===== Test fonctionnel 8 bis : Swipe de projets
+
+*Scénario* : Etre sur la page de description d’un projet et pouvoir swiper à celle du suivant +
+*Résultat attendu* : Affichage de la page de description du projet suivant après le swipe +
+*Initialisation* : Être sur la page de description d’un projet +
+*Contraintes* : Avoir un accès Internet  +
+*Tests unitaires :*  +
+Action : swiper vers la droite ou vers la gauche +
+Résultat : affichage correct de la page de description du projet suivant. Vérifier que quand on retourne sur le projet précédent, les informations sont bien mises à jour. Par exemple, liker le projet (cf test fonctionnel 9) puis swiper et revenir, vérifier que le like a bien été pris en compte.
+
+
+===== Test fonctionnel 9 : Like d’un projet  
+
+*Scénario* : Liker un projet depuis la page de description d’un projet +
+*Résultat attendu* : Like ajouté, nombre de likes augmente de 1, et le coeur devient rempli +
+*Initialisation* : Être sur la page de description d’un projet +
+*Contraintes* : Avoir eu réseau  +
+*Tests unitaires :*  +
+Action : cliquer sur le coeur vide  +
+Résultat : le coeur se remplit et le nombre de likes augmente de 1 (nombre de likes s’affiche à côté du coeur) et vice-versa pour dislike
+
+
+===== Test fonctionnel 10 : Enregistrement ou suppression d’un projet de la liste
+
+*Scénario 1* : Enregistrer dans les favoris ou signifier qu’un projet ne l’intéresse pas à partir de la liste des projets elle-même  +
+*Résultat attendu* : Après l’action de l’utilisateur (enregistrer pour plus tard, ou pas intéressé), la ligne correspondant au projet disparaît de la liste  +
+*Initialisation* : Être sur la page de la liste des projets  +
+*Contraintes* : Avoir eu du réseau pour rafraîchir la liste des projets, être sur le menu “Projets” de la barre de navigation +
+*Tests unitaires :*  +
+Action : swipe à gauche sur la ligne d’un projet pour l’enregistrer dans les favoris ou à droite pour le supprimer des recommandations +
+Résultat :  disparition de la ligne correspondant au projet de la liste des projets. Si le projet a été enregistré à plus tard, l’utilisateur peut le retrouver dans ses favoris (cf test fonctionnel 12).
+
+*Scénario 2* : Enregistrer dans les favoris ou signifier qu’un projet ne l’intéresse pas à partir de la page de description d’un projet +
+*Résultat attendu* : Après l’action de l’utilisateur (enregistrer pour plus tard, ou pas intéressé), le projet disparaît et la description du suivant dans la liste apparaît à l’écran +
+*Initialisation* : Être sur la page de description d’un projet +
+*Contraintes* : Avoir eu du réseau pour rafraîchir la liste des projets +
+*Tests unitaires :*  +
+Action : appuyer sur le menu flottant en bas à droite +
+Résultat : trois icônes défilent sur l’écran liées à trois actions (enregistrer dans les favoris, supprimer des recommandations = pas intéressé, partager à un ami)
+
+Action : appuyer sur une des deux icônes enregistrer dans les favoris, ou pas intéressé +
+Résultat : disparition du projet et apparition à l’écran de la description du projet suivant dans la liste. Si le projet a été enregistré à plus tard, l’utilisateur peut le retrouver dans ses favoris (cf test fonctionnel 12).
+
+
+===== Test fonctionnel 11 : Partage d’un projet 
+
+*Scénario* : Envoyer un projet à un ami +
+*Résultat attendu* : L’ami reçoit une notification de partage de projet +
+*Initialisation* : Être sur la page de description d’un projet +
+*Contraintes* : Avoir eu du réseau pour rafraîchir la liste des projets +
+*Tests unitaires :*  +
+Action : appuyer sur le menu flottant en bas à droite +
+Résultat : trois icônes défilent sur l’écran liées à trois actions (enregistrer dans les favoris, supprimer des recommandations = pas intéressé, partager à un ami)
+
+Action : appuyer sur l’icône envoyer à un ami +
+Résultat : une fenêtre qui s’affiche (AlertDialog) affichant une liste déroulante de ses amis avec des checkboxes et deux boutons “Annuler” et “Envoyer”
+
+Action : cocher les amis auxquels le projet sera partagé puis cliquer sur “Envoyer” +
+Résultat : fermeture de la fenêtre et affichage d’un toast message pour indiquer que le projet a bien été partagé. Les amis recevront une notification de partage de projet dans le menu “Notifications” de la barre de navigation (cf test fonctionnel 7)
+
+OU +
+Action : cliquer sur “Annuler” +
+Résultat : fermeture de la fenêtre
+
+
+===== Test fonctionnel 12 : Projets enregistrés 
+
+*Scénario* : Vérifier qu’un projet liké est ajouté dans l’onglet “Projets likés” de la section “Bibliothèque” et qu’un projet enregistré s’affiche dans l’onglet “Mes favoris” de la section “Bibliothèque”  +
+*Résultat attendu* : Affichage des projets dans la section “Bibliothèque” +
+*Initialisation* : Être sur un des menus de la barre de navigation +
+*Contraintes* : Avoir liké un projet (cf test fonctionnel 9) ou enregistrer un projet dans les favoris (cf test fonctionnel 10) +
+*Tests unitaires :*  +
+Action : appuyer sur le menu “Bibliothèque” de la barre de navigation +
+Résultat : affichage de la liste défilable des projets enregistrés. Accéder aux projets enregistrés ou likés selon qu’on soit dans l’onglet “Mes favoris” ou “Projets likés”. Lorsque l’on clique sur le menu “Bibliothèque” de la barre de navigation, on est directement dans l’onglet “Mes favoris” pour visualiser les projets enregistrés par l’utilisateur.
+
+Si l’on souhaite voir les projets likés +
+Action : cliquer sur l’onglet “Projets likés” +
+Résultat : affichage d’une liste défilable des projets likés
+
+Dans tous les cas +
+Action : glisser de bas en haut/ de la droite pour faire défiler les projets +
+Résultat : les projets défilent sur le fragment central 
+
+Seulement pour l’onglet “Mes favoris” +
+Action : swipe vers la gauche sur une des lignes de la liste de “Mes favoris”  +
+Résultat : retirer le projet des favoris, suppression de la ligne correspondant au projet
+
+Dans tous les cas +
+Action : appuyer sur un projet de la liste +
+Résultat : un nouvel écran s’affiche avec la description du projet
+
+==== Résultat des tests 
+A chaque fois qu'un test à été fait et réussi, il a été réalisé à chaque nouvelle modification et nous avons vérifié qu'il fonctionnait encore.
+
+[cols=",^,^,",options="header",]
+|====
+|Test fonctionnel (TF)|Quand |Fait et réussi |Remarques
+|TF1 : Carte | PAN2 |x |
+|TF2 : Connexion avec Facebook | 06/04 |x |Intégration Android et Social
+|TF2 bis : Créer un compte sans Facebook|09/04 |x |
+|TF2 bis : Créer un compte avec Facebook|10/04 |x | Tester le 09/04, mais problème avec le Facebook ID. Test réussi le 10/04
+|TF3 : Se déconnecter de son compte |09/04 |x |
+|TF4 : Modification des préférences |09/04 |x |
+|TF5 : Affichage des contacts |12/04 |x |
+|TF5 bis : Ajout de nouveaux contacts |Courant PAN4 |x |
+|TF6 : Modification des paramètres |10/04 |x |Seulement la navigation jusqu'à la page pour modifier, fonctionnalité pas implémentée finalement car secondaire dans un premier temps
+|TF7 : Notifications |Courant PAN4 |x |
+|TF8 : Liste des projets  | 09/04|x |Afficher la liste des projets de la BDD obtenue par la recherche web
+|TF8 bis : Swipe de projets |Courant PAN4 |x |
+|Affichage des informations d'un projet|11/04|x| Afficher la photo, le nombre de like d'un projet, redirection vers le site web associé. Afficher le domaine et la catégorie d'un projet obtenus par la recommandation.
+|TF9 : Like d’un projet |11/04 |x |Mise à jour du nombre de likes par envoi de requête
+|TF10 : Enregistrement ou suppression d’un projet de la liste |Courant PAN4 |x |Mise à jour dans la BDD. Navigation faite pour le PAN3 mais implémentation de l'action au PAN4
+|TF11 : Partage d’un projet  |Courant PAN4 |x |Navigation faite pour le PAN3 mais implémentation de l'action au PAN4
+|TF12 : Projets enregistrés  |Courant PAN4 |x |
+|====

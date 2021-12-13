@@ -1,0 +1,21 @@
+=== Module Social
+
+==== Descriptions
+[.text-justify]
+Ce module a pour objectif d'implémenter toutes les fonctionnalités liées à l'aspect réseau social de l'application : Réseau d'amis, partage de projets, statut, profil, connexion via Facebook, ...
+
+==== Avancement
+[.text-justify]
+Au PAN2 : +
+Le premier objectif était de relier notre application à Facebook afin de permettre aux nouveaux utilisateurs de lier leur compte E-cclesia à leur compte FB existant. Nous nous sommes donc renseignés sur l'API fournie par Facebook et avons créé l'application sur Facebok Developer.
+Ensuite nous avons défini dans le diagramme d'activité ci-dessous le processus de connexion/inscription à l'application.
+
+.Diagramme d'activité
+image::../images/Diagramme_d_activité.png[Diagramme d'activité,1620,2421]
+{empty}
+
+Au PAN3 : +
+Nous avons ajouté au projet Android Studio les dépendances nécessaires et avons commencé à implémenter le système de login, en prévoyant la possibilité de se connecter avec ou sans compte Facebook. Pour palier à l'impossibilité de récupérer la liste d'amis Facebook de l'utilisateur, nous avons décidé d'implémenter notre propre système d'amis, essentiellement contenu dans la table Friendship de la base de données. Il était alors possible de rechercher, ajouter ou supprimer des amis et consulter sa liste de contacts. Nous avons enfin créé la page profil de l'utilisateur où celui-ci peut vérifier et modifier ses préférences et ses informations personnelles.
+
+Au PAN4 : + 
+Nous avons ajouté les fonctionnalités sociales qui manquaient : L'envoi d'une demande d'ami et le partage d'un projet à un ami, ainsi que le système de notifications synchrones qui permet d'informer l'utilisateur, lors de sa connexion, de toutes les nouvelles sollicitations sociales dont il a fait l'objet durant son absence. L'objectif d'implémenter un système de notifications asynchrones ("push") a été abandonné par manque de temps car cela nécessitait la vérification de l'application par l'équipe Google.

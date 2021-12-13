@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_ecclesia"
+    tools:context=".activity.ProfileActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.ProgressBarColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:elevation="5dp"/>
+
+    <ScrollView
+        android:id="@+id/profile_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <FrameLayout
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/profile_activity_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="15dp"
+                    android:src="@drawable/default_profile"
+                    android:foreground="@drawable/round_crop_circle"/>
+
+                <ImageButton
+                    android:id="@+id/profile_activity_picture_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="157dp"
+                    android:layout_marginTop="157dp"
+                    android:src="@drawable/ic_baseline_add_a_photo_24"
+                    android:background="@drawable/round_button"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/profile_activity_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/arbutus_slab"
+                android:gravity="center"
+                android:text="Nom"
+                android:textColor="@color/black_ecclesia"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile_activity_city_txt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="-30dp"
+                android:fontFamily="@font/cinzel"
+                android:gravity="center"
+                android:text="Nom"
+                android:textColor="@color/black_ecclesia"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:visibility="gone"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/profile_activity_constraint_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_activity_name_txt"
+                    app:layout_constraintBottom_toTopOf="@id/profile_activity_request_buttons"
+                    tools:ignore="NotSibling">
+
+                    <TextView
+                        android:id="@+id/profile_activity_personal_info_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mes informations personnelles"
+                        android:fontFamily="serif"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black_ecclesia"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:backgroundTint="@color/beige_ecclesia">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="15dp">
+
+                            <TextView
+                                android:id="@+id/profile_activity_location_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gabriela"
+                                android:gravity="center|left"
+                                android:layout_marginTop="15dp"
+                                android:hint="city"
+                                android:textStyle="italic"
+                                android:textColor="@color/grey_ecclesia"
+                                android:textSize="20sp"
+                                app:drawableLeftCompat="@drawable/ic_baseline_location_city_24"/>
+
+
+                            <TextView
+                                android:id="@+id/profile_activity_gender_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_baseline_emoji_people_24"
+                                android:paddingTop="28dp"
+                                android:fontFamily="@font/gabriela"
+                                android:gravity="center|left"
+                                android:hint="gender"
+                                android:textColor="@color/grey_ecclesia"
+                                android:textSize="20dp"
+                                android:textStyle="italic"
+                                android:drawableLeft="@drawable/ic_baseline_emoji_people_24" />
+
+                            <TextView
+                                android:id="@+id/profile_activity_birth_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="30dp"
+                                android:fontFamily="@font/gabriela"
+                                android:gravity="center|left"
+                                android:textStyle="italic"
+                                android:hint="day month year"
+                                android:textColor="@color/grey_ecclesia"
+                                android:textSize="18sp"
+                                android:drawableStart="@drawable/ic_baseline_cake_24"
+                                android:drawableLeft="@drawable/ic_baseline_cake_24" />
+
+                            <TextView
+                                android:id="@+id/profile_activity_email_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gabriela"
+                                android:paddingTop="30dp"
+                                android:paddingBottom="15dp"
+                                android:textStyle="italic"
+                                android:gravity="center|left"
+                                android:hint="name.surname@example.com"
+                                android:textColor="@color/grey_ecclesia"
+                                android:textSize="18dp"
+                                android:drawableStart="@drawable/ic_baseline_email_24"
+                                android:drawableLeft="@drawable/ic_baseline_email_24" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/profile_activity_add_friend_button"
+            app:layout_constraintTop_toBottomOf="@id/profile_activity_constraint_info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="35dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bleu_ecclesia"
+            android:drawableLeft="@drawable/ic_baseline_person_add_24"
+            android:drawableTint="@color/white_ecclesia"
+            android:fontFamily="serif"
+            android:text="Demander en ami"
+            android:textAllCaps="false"
+            android:textColor="@color/white_ecclesia"
+            android:visibility="gone"
+            tools:ignore="NotSibling" />
+
+        <LinearLayout
+            android:id="@+id/profile_activity_request_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/profile_activity_constraint_info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            tools:ignore="NotSibling">
+
+            <Button
+                android:id="@+id/profile_activity_accept_friend_button"
+                android:layout_marginBottom="35dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green_ecclesia"
+                android:drawableLeft="@drawable/ic_baseline_check_circle_24"
+                android:drawableTint="@color/white_ecclesia"
+                android:fontFamily="serif"
+                android:text="Accepter"
+                android:textAllCaps="false"
+                android:textColor="@color/white_ecclesia"/>
+
+            <Button
+                android:id="@+id/profile_activity_refuse_friend_button"
+                android:layout_marginBottom="35dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red_ecclesia"
+                android:drawableLeft="@drawable/ic_baseline_person_off_24"
+                android:drawableTint="@color/white_ecclesia"
+                android:fontFamily="serif"
+                android:text="Supprimer"
+                android:textAllCaps="false"
+                android:textColor="@color/white_ecclesia"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/profile_activity_delete_friend_button"
+            app:layout_constraintTop_toBottomOf="@id/profile_activity_constraint_info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="35dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bleu_ecclesia"
+            android:drawableLeft="@drawable/ic_baseline_person_off_24"
+            android:drawableTint="@color/white_ecclesia"
+            android:fontFamily="serif"
+            android:text="Supprimer de mes amis"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@color/white_ecclesia"
+            android:visibility="gone"
+            tools:ignore="NotSibling" />
+
+        <Button
+            android:id="@+id/profile_activity_edit_button"
+            app:layout_constraintTop_toBottomOf="@id/profile_activity_constraint_info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bleu_ecclesia"
+            android:drawableLeft="@drawable/ic_baseline_edit_24"
+            android:drawableTint="@color/white_ecclesia"
+            android:fontFamily="serif"
+            android:text="Modifier mon profil"
+            android:textAllCaps="false"
+            android:textColor="@color/white_ecclesia"
+            android:visibility="visible"
+            tools:ignore="NotSibling" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

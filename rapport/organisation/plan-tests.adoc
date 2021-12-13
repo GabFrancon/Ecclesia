@@ -1,0 +1,36 @@
+=== Plans de test (PAN2+)
+
+
+*Plan de test et intégration : (PAN2)*
+
+* Vérification continue du respect des règles du dépôt
+
+* Une fois qu'on a une démo de chaque module et les plans de tests unitaires, effectuer des tests d'intégration pour valider l'intégration des différents modules entre eux (ex: test synchronisation BDD/Client-Serveur) pour éventuellement mettre en évidence des problèmes d'interfaces entre différents programmes et les gérer le plus rapidement possible. Effectuer également des tests fonctionnels pour s'assurer que l'application est conforme aux cahiers des charges et que les fonctionnalités principales sont bien implémentées. Enfin, effectuer des tests de non régression pour vérifier que des modifications n'ont pas altérées le fonctionnement de l'application.
+
+* Réunion d’intégration à chaque séance PACT (les modules qui communiquent se parlent et on supervise)
+
+* Plan de Release :
+
+[cols=",^,^",options="header",]
+|====
+|Nom release |Date |Description 
+|V0|PAN2|Architecture du repository en place, premier plan de test
+|V1|mi PAN3|Démo pour chaque module
+|V2|PAN3|Première version de démo complète (certains modules en retard pourront être simulés si pas indispensable?)
+|V3|PAN4|Version finale de l’appli et publication (qui se passe super et nous rends n°1 monde en téléchargement)
+|====
+
+ 
+*Règles du dépôt git :*
+
+* Une branche par module, bien communiquer au sein d’un module pour se répartir les tâches
+* Toujours travailler sur sa branche, merge quand ça marche
+* Faire des commits réguliers (chaque nouveauté/ bugfix)
+* Test à faire avant de push ou merge (pour vérifier que des trucs qui marchaient marchent toujours)
+* Push au moins une fois par semaine (pour garder le repo Gitlab à jour)
+
+
+*Modifications au PAN3 :*
+
+* Simplification de l'architecture du repository : plus que 3 branches (master, Client, Server), chaque module travaille du côté approprié (ex : module Android sur Client)
+* Comme les séances PACT ont été remplacées par une semaine PACT, la phase de tests et d'intégration a été décalée. Nous nous sommes surtout concentrés sur l'intégration lors de cette semaine, et nous avons effectué les tests d'intégration, fonctionnels et de non régression manuellement. A chaque fois qu'une nouvelle modification était faite, nous vérifions qu'elle était bien intégré au reste mais aussi que ce qui marchait auparavant marche encore, et nous refaisions les tests fonctionnels. Nous avons continué les tests manuels au PAN4, à chaque nouveau changement.

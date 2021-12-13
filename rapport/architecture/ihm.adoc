@@ -1,0 +1,28 @@
+=== Interface utilisateur graphique
+
+Voici l'interface graphique de notre application android :
+
+.Ecran d'accueil
+image::../images/app_home.png[app home,338,600] 
+
+{empty} +
+
+.Onglet recommandations
+image::../images/app_recommandation.png[app recomandation,338,600]
+{empty} +
+
+.Onglet notifications
+image::../images/app_notification.png[app notification,338,600]
+{empty} +
+
+.Onglet Mes projets 
+image::../images/app_projects.png[app projects,338,600]
+{empty} +
+
+.Ecran d'un projet sans le menu
+image::../images/app_project_exemple_1.png[app project exemple 1,338,600]
+{empty} +
+
+.Ecran d'un projet avec le menu
+image::../images/app_project_exemple_2.png[app project exemple 2,338,600]
+{empty} +

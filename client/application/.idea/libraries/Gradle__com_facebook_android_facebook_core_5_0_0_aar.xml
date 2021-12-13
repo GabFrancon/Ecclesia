@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-core:5.0.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/17d42e5131dabb296b1eab9460f27548/jetified-facebook-core-5.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/17d42e5131dabb296b1eab9460f27548/jetified-facebook-core-5.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/17d42e5131dabb296b1eab9460f27548/jetified-facebook-core-5.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/451fd0beea488701dce1de51fcd7a4dc/jetified-facebook-core-5.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a06f818e758373db778113a724843f2e/jetified-facebook-core-5.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a06f818e758373db778113a724843f2e/jetified-facebook-core-5.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a06f818e758373db778113a724843f2e/jetified-facebook-core-5.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-core/5.0.0/7aad516418b22b72b24ff7f48175c6770c066d01/facebook-core-5.0.0-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-core/5.0.0/7aad516418b22b72b24ff7f48175c6770c066d01/facebook-core-5.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-core/5.0.0/60d0485d842186de38fe02bb107a0b07de24191d/facebook-core-5.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-core/5.0.0/60d0485d842186de38fe02bb107a0b07de24191d/facebook-core-5.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

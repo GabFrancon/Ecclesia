@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bleu_ecclesia">#FF09C1CA</color>
+    <color name="bleu_dark_ecclesia">#099DCA</color>
+    <color name="white_ecclesia">#FFFFFF</color>
+    <color name="black_ecclesia">#000000</color>
+    <color name="camel_ecclesia">#F8C8A9</color>
+    <color name="pastel1_ecclesia">#f7b1a9</color>
+    <color name="pastel2_ecclesia">#fbd69e</color>
+    <color name="grey_ecclesia">#AE000000</color>
+    <color name="light_grey_ecclesia">#8824666C</color>
+    <color name="red_ecclesia">#BD1F2C</color>
+    <color name="purple_ecclesia">#D0BD1F44</color>
+    <color name="green_ecclesia">#118852</color>
+    <color name="beige_ecclesia">#ffe4d4</color>
+    <color name="beige_translucent_ecclesia">#92FFE4D4</color>
+    <color name="blue_grey_ecclesia">#2A06F3F3</color>
+    <color name="blue_dark_ecclesia">#2A2C8EF6</color>
+    <color name="green_map_ecclesia">#FAEDE5</color>
+    <color name="yellow_ecclesia">#88F6E762</color>
+
+</resources>
+

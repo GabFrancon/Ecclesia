@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Envoyer à"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/arbutus_slab"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewShareProject"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancel_share_project_button"
+            android:layout_width="120dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="@color/pastel1_ecclesia"
+            android:clickable="false"
+            android:fontFamily="serif"
+            android:text="Annuler"
+            android:textAllCaps="false"
+            android:textColor="@color/white_ecclesia"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/share_project_button"
+            android:layout_width="120dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/bleu_ecclesia"
+            android:clickable="false"
+            android:fontFamily="serif"
+            android:text="Envoyer"
+            android:textAllCaps="false"
+            android:textColor="@color/white_ecclesia"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

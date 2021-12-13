@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignInActivity"
+    android:background="@color/white_ecclesia">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/sign_in_activity_head_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:textSize="23sp"
+            android:textColor="@color/black_ecclesia"
+            android:gravity="center|center_horizontal"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:text="Créer un compte"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+
+            <EditText
+                android:id="@+id/sign_in_activity_firstname_input"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:hint="Prénom"
+                android:textColorHint="@color/grey_ecclesia"
+                android:fontFamily="serif"
+                android:drawableLeft="@drawable/ic_baseline_emoji_people_24"
+                android:gravity="left|center_horizontal"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/sign_in_activity_lastname_input"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:hint="Nom"
+                android:textColorHint="@color/grey_ecclesia"
+                android:fontFamily="serif"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/sign_in_activity_birth_input"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:hint="Naissance"
+                android:textColorHint="@color/grey_ecclesia"
+                android:fontFamily="serif"
+                android:drawableLeft="@drawable/ic_baseline_cake_24"
+                android:gravity="left|center_horizontal"
+                android:drawablePadding="10dp"/>
+
+            <Button
+                android:id="@+id/sign_in_activity_set_birth_button"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bleu_ecclesia"
+                android:drawableRight="@drawable/ic_baseline_date_range_24"
+                android:drawableTint="@color/white_ecclesia"/>
+
+            <CheckBox
+                android:id="@+id/sign_in_activity_female_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:drawableRight="@drawable/ic_baseline_female_24"
+                android:drawablePadding="-7dp"/>
+
+            <CheckBox
+                android:id="@+id/sign_in_activity_male_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:drawableRight="@drawable/ic_baseline_male_24"
+                android:drawablePadding="-7dp"/>
+
+            <CheckBox
+                android:id="@+id/sign_in_activity_transgender_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:drawableRight="@drawable/ic_baseline_transgender_24"
+                android:drawablePadding="-5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Spinner
+                android:id="@+id/sign_in_activity_city_spinner"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+
+            <FrameLayout
+                android:layout_marginLeft="40dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp">
+
+                <ImageView
+                    android:id="@+id/sign_in_activity_profile_picture"
+                    android:layout_width="136dp"
+                    android:layout_height="136dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:foreground="@drawable/crop_circle"
+                    android:src="@drawable/default_profile"/>
+
+
+                <Button
+                    android:id="@+id/sign_in_activity_picture_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/round_button"
+                    android:layout_gravity="center|center_horizontal"
+                    android:visibility="invisible"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/sign_in_activity_email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:hint="Email"
+            android:textColorHint="@color/grey_ecclesia"
+            android:fontFamily="serif"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:gravity="left|center_horizontal"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/sign_in_activity_password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"
+            android:hint="Mot de passe"
+            android:textColorHint="@color/grey_ecclesia"
+            android:fontFamily="serif"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:gravity="left|center_horizontal"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/sign_in_activity_password_second_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"
+            android:hint="Répétez le mot de passe"
+            android:textColorHint="@color/grey_ecclesia"
+            android:fontFamily="serif"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:gravity="left|center_horizontal"
+            android:drawablePadding="10dp"/>
+
+        <Button
+            android:id="@+id/sign_in_activity_valid_btn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/bleu_ecclesia"
+            android:drawableLeft="@drawable/ic_baseline_check_circle_24"
+            android:drawableTint="@color/white"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="S'inscrire"
+            android:textAllCaps="false"
+            android:textColor="@color/white_ecclesia"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

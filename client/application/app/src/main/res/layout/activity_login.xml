@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@color/white_ecclesia">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/main_activity_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical"
+        tools:context=".controller.MainActivity"
+        android:animateLayoutChanges="true">
+
+        <TextView
+            android:id="@+id/main_activity_greeting_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif"
+            android:text="Bienvenue sur"
+            android:textColor="@color/bleu_ecclesia"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/main_activity_login_image"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/logo"
+            tools:ignore="VectorDrawableCompat" />
+
+        <EditText
+            android:id="@+id/main_activity_email_txt_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textColorHint="@color/grey_ecclesia"
+            android:fontFamily="serif"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:gravity="left|center_horizontal"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/main_activity_password_txt_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:inputType="textPassword"
+            android:hint="Mot de passe"
+            android:textColorHint="@color/grey_ecclesia"
+            android:fontFamily="serif"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:gravity="left|center_horizontal"
+            android:drawablePadding="10dp"/>
+
+        <Button
+            android:id="@+id/main_activity_login_btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/bleu_ecclesia"
+            android:drawableLeft="@drawable/ic_baseline_login_24"
+            android:drawableTint="@color/white"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Se connecter"
+            android:textAllCaps="false"
+            android:textColor="@color/white_ecclesia"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/main_activity_or_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:textColor="@color/grey_ecclesia"
+            android:textSize="17dp"
+            android:text="ou"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/main_activity_fb_login_button"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_activity_welcome_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="56dp"
+        tools:context=".controller.MainActivity"
+        android:animateLayoutChanges="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/main_activity_ecclesia_logo"
+            android:layout_marginTop="5dp"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/logo"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/main_activity_welcome_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:textColor="#AE000000"
+            android:textSize="20dp"
+            android:text="Content de vous revoir" />
+
+        <FrameLayout
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/main_activity_profile_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/crop_circle"
+                android:src="@drawable/basic_profile_picture"/>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/main_activity_continue_btn"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/bleu_ecclesia"
+            android:textColor="@color/white_ecclesia"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:fontFamily="serif"
+            android:text="Continuer"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_baseline_check_circle_24"
+            android:drawableTint="@color/white"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/main_activity_sign_in_btn"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/camel_ecclesia"
+        android:drawableLeft="@drawable/ic_baseline_assignment_ind_24"
+        android:drawableTint="@color/white"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Créer un compte"
+        android:textAllCaps="false"
+        android:textColor="@color/white_ecclesia"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

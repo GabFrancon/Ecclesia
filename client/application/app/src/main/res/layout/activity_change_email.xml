@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChangeEmailActivity"
+    android:background="@color/white_ecclesia"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/actual_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email actuel"
+        android:textColorHint="@color/grey_ecclesia"
+        android:fontFamily="serif"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:gravity="left|center_horizontal"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/change_email_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="textEmailAddress"
+        android:hint="Nouvel email"
+        android:textColorHint="@color/grey_ecclesia"
+        android:fontFamily="serif"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:gravity="left|center_horizontal"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/check_change_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="textEmailAddress"
+        android:hint="Retapez le nouvel email"
+        android:textColorHint="@color/grey_ecclesia"
+        android:fontFamily="serif"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:gravity="left|center_horizontal"
+        android:drawablePadding="10dp"/>
+
+    <Button
+        android:id="@+id/change_email_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/bleu_ecclesia"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Mettre à jour l'email"
+        android:textAllCaps="false"
+        android:textColor="@color/white_ecclesia"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/pastel1_ecclesia"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Annuler"
+        android:textAllCaps="false"
+        android:textColor="@color/white_ecclesia"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

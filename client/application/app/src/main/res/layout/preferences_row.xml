@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/preferencesLayout"
+    android:background="@color/white_ecclesia">
+
+    <androidx.cardview.widget.CardView
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:id="@+id/prefLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/preference_image"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop" />
+
+            <CheckBox
+                android:id="@+id/pref_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="CheckBox"
+                android:gravity="center|center_horizontal"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="1sp"
+                android:autoSizeMaxTextSize="10sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/arbutus_slab"
+                android:textColor="@color/grey_ecclesia"
+                android:checked="false"
+                style="@style/CustomCheckbox02"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

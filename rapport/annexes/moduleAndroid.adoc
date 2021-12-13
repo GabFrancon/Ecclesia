@@ -1,0 +1,42 @@
+=== Module Android
+
+==== Description 
+
+Ce module a pour objectif de créer la charte graphique et d'implémenter l'interface utilisateur sur Android Studio pour réaliser une application fluide et intuitive d'utilisateur. Il a pour objectif d'implémenter les fonctionnalités décrites dans le cahier des charges (cf scénario d'usage). 
+
+==== Avancement
+
+[.text-justify]
+Au PAN2 : +
+Nous avons d'abord fait le choix de travailler sur un projet de notre côté pour faire le TP et apprendre à utiliser Android Studio. Nos objectifs pour le PAN2 était d'avancer au maximum sur la navigation entre les différentes pages de l'application et d'afficher notamment la carte, ainsi que réaliser le plan de tests (tests unitaires). +
+Nous avons réussi à faire le plan de tests, à réaliser le squelette de l'application et à afficher la carte grâce à l'API Google Maps mais dans deux projets Android Studio différents. Nous avons rencontré quelques soucis pour intégrer la carte dans le squelette de l'application car nous ne maîtrisions pas bien les fragments et les activités.
+
+Au PAN3 : +
+Nous avons compris comment le code doit se répartir entre les fragments et les activités, et nous avons réussi à intégrer la carte. Avant la semaine PACT, nous avons fait le design et implémenté l'interface utilisateur. Pendant la semaine PACT, nous avons implémenté les features principales pour la démo du PAN3 (voir partie 4.1 planning PACT). Nous avons également réalisé les tests unitaires manuellement (tests unitaires des tests fonctionnels cf partie 5 annexe module Tests & Intégration).
+
+Au PAN4 : + 
+Nous avons amélioré le design et optimisé la navigation à l'aide de threads. Nous avons également implémenté quelques features manquantes (voir partie 4.1 planning PACT).
+
+==== Résultat des tests 
+A chaque fois qu'un test à été fait et réussi, il a été réalisé à chaque nouvelle modification et nous avons vérifié qu'il fonctionnait encore.
+
+[cols=",^,^,",options="header",]
+|====
+|Test unitaire|Quand |Fait et réussi |Remarques
+|Navigation entre les différents activités du menu hamburger | PAN2 |x |
+|Navigation entre les différents fragments de la barre de navigation | PAN2 |x |
+|Affichage carte google Maps | 04/04 |x |
+|Recentrage de la carte sur position actuelle en appuyant sur le bouton pour recentrer|04/04 |x |
+|Affichage d'une liste scrollable de projets |04/04 |x | 
+|Affichage d'une liste scrollable de notifications  |05/04 |x |
+|Accès aux détails d'un projet en cliquant sur un élément de la liste en récupérant les données |05/04 |x |
+|Dérouler le bouton flottant sur la page d'un projet pour excécuter une action (envoi d'un toast) |05/04 |x |
+|Choisir ses préférences de catégories et de domaines |09/04 |x |08/04: problème avec checkbox et recyclerview, problème résolu le 09/04
+|Bon affichage de la page de bienvenue |09/04 |x |
+|Navigation jusqu'à MainActivity selon nouvel utilisateur ou pas| 11/04|x |
+|Modifier les paramètres|10/04 |x |Seulement la navigation jusqu'à la page de modification des préférences
+|Affichage dialog pour choisir à qui partager un projet|14/05 |x |
+|Affichage des projets selon le tab menu sélectionné|17/05 |x |
+|Pins sur la carte|17/05 |x |
+|====
+

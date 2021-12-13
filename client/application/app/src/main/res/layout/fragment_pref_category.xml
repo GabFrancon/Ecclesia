@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_ecclesia">
+
+    <TextView
+        android:id="@+id/choose_pref_area"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:text="Quels genres d'événements vous intéressent ?"
+        android:textSize="16dp"
+        android:textColor="@color/grey_ecclesia"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPrefCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/save_pref_category_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_ecclesia"
+        android:textAllCaps="false"
+        android:fontFamily="@font/arbutus_slab"
+        android:backgroundTint="@color/bleu_ecclesia"
+        android:text="Enregistrer"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

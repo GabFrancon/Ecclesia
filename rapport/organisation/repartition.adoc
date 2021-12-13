@@ -1,0 +1,24 @@
+=== Répartition des élèves par module
+
+
+[cols=",^,^,^,^,^,^,^,^",options="header",]
+|====
+| Nom        | Android | Client-serveur | Classification automatique et traitement du langage | BDD   | Recherche web | Réseau social  | Module SES | Test & Intégration
+| Nom Expert |Jean-Claude DUFOURD  | Jean-Claude MOISSINAC |    Matthieu Labeau   |Louis JACHIET|Jean-Claude MOISSINAC |(Jean-Claude DUFOURD)|Michael BAKER     | Lucien MAMAN
+  
+| Youssef    |         |                |        x        |   x   |               |         |           |                   
+  
+| Jade       |         |                |                 |       |               |    x    |      x     |                   
+
+| Antoine    |         |                |        x        |       |               |         |      x     |                   
+
+| Gabriel    |         |                |                 |   x   |               |    x    |           |                   
+
+| Loïc       |    x    |                |                 |       |       x       |         |           |                   
+
+| Guilhem    |         |       x        |                 |       |               |         |           |      x             
+
+| Pascal     |         |       x        |                 |       |       x       |         |           |                   
+
+| Estelle    |   x     |                |                 |       |               |         |           |     x                
+|====

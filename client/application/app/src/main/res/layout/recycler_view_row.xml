@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="3dp"
+    android:backgroundTint="@color/white_ecclesia">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/projectLayout"
+        android:clickable="true"
+        android:foreground="@drawable/ripple_effect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/relative_image"
+            android:layout_width="110dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/project_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/example_picture_project" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="226dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/relative_image"
+            app:layout_constraintTop_toTopOf="@id/relative_image"
+            app:layout_constraintBottom_toBottomOf="@id/relative_image"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/recommanded_projects_txt"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="serif"
+                android:justificationMode="inter_word"
+                android:text="Festival de musique actuelle à Paris"
+                android:textColor="@color/black_ecclesia"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:text="28 Juillet 2021"
+                android:gravity="center_vertical"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/kameron"
+                android:autoSizeMaxTextSize="13sp"
+                android:autoSizeMinTextSize="11sp"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/grey_ecclesia"/>
+
+            <TextView
+                android:id="@+id/place_txt"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+
+                android:text="70 Boulevard Ornano, 75018 Paris"
+                android:autoSizeMaxTextSize="13sp"
+                android:autoSizeMinTextSize="11sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/kameron"
+                android:textColor="@color/grey_ecclesia"
+                android:justificationMode="inter_word"
+                android:ellipsize="end"
+                android:maxLines="2"/>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

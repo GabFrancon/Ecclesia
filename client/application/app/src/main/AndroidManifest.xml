@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ecclesia">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- The API key for Google Maps-based APIs. -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <!-- These two next activities are managed by Facebook, not E-cclesia -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <!-- Here are activities managed by E-cclesia app -->
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:label="Profil"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.ProfileActivity" />
+        <activity
+            android:name=".activity.PreferencesActivity"
+            android:label="Mes préférences"
+            android:parentActivityName=".activity.SignInActivity"
+            android:theme="@style/AppTheme.PreferenceActivity" />
+        <activity
+            android:name=".activity.ChangeEmailActivity"
+            android:label="Réglage-Email"
+            android:parentActivityName=".activity.SettingsActivity"
+            android:theme="@style/AppTheme.ChangeEmailActivity" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="Paramètres"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.SettingsActivity" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:label="Réglage-Mot de passe"
+            android:parentActivityName=".activity.SettingsActivity"
+            android:theme="@style/AppTheme.ChangePasswordActivity" />
+        <activity
+            android:name=".activity.FriendsActivity"
+            android:label="Mes contacts"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.ContactsActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:parentActivityName=".activity.SignInActivity"
+            android:theme="@style/AppTheme.LoginActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.MainActivity" />
+
+        <activity
+            android:name=".activity.ProjectActivity"
+            android:label="Détails du projet"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.ProjectActivity" />
+        <activity
+            android:name=".activity.SignInActivity"
+            android:parentActivityName=".activity.LoginActivity"
+            android:theme="@style/AppTheme.SignInActivity" />
+
+        <!-- Special "launch activity" where app always begins -->
+        <activity android:name=".activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

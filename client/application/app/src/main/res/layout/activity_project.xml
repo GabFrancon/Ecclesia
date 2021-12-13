@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_ecclesia"
+    tools:context=".activity.ProjectActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.ProgressBarColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:elevation="5dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/project_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_button"
+                app:layout_constraintTop_toTopOf="@id/find_out_more_button"
+                app:layout_constraintBottom_toBottomOf="@id/find_out_more_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/bleu_ecclesia"
+                android:clickable="true"
+                android:focusable="true"
+                android:tint="@color/white_ecclesia"
+                app:srcCompat="@drawable/ic_add"
+                tools:ignore="VectorDrawableCompat" />
+
+            <Button
+                android:id="@+id/find_out_more_button"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/ic_world"
+                android:drawableTint="@color/white_ecclesia"
+                android:text="En savoir plus"
+                android:textSize="19dp"
+                android:fontFamily="@font/kameron"
+                android:textAllCaps="false"
+                android:textColor="@color/white_ecclesia"
+                android:backgroundTint="@color/bleu_ecclesia"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+                android:backgroundTint="@color/bleu_ecclesia"
+                android:tint="@color/white_ecclesia"
+                app:layout_constraintBottom_toTopOf="@+id/add_button"
+                app:layout_constraintEnd_toEndOf="@+id/add_button"
+                app:srcCompat="@drawable/ic_share"
+                tools:ignore="VectorDrawableCompat" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/dislike_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+                android:backgroundTint="@color/bleu_ecclesia"
+                android:tint="@color/white_ecclesia"
+                app:layout_constraintBottom_toTopOf="@+id/share_button"
+                app:layout_constraintEnd_toEndOf="@+id/share_button"
+                app:srcCompat="@drawable/ic_hide"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="invisible"
+                android:backgroundTint="@color/bleu_ecclesia"
+                android:tint="@color/white_ecclesia"
+                app:layout_constraintBottom_toTopOf="@+id/dislike_button"
+                app:layout_constraintEnd_toEndOf="@+id/dislike_button"
+                app:srcCompat="@drawable/ic_favorite"
+                tools:ignore="VectorDrawableCompat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

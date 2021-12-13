@@ -1,0 +1,20 @@
+=== Module Recherche WEB
+
+==== Description
+[.text-justify]
+L'objectif du module Recherche WEB est de remplir automatiquement la base de données, en collectant régulièrement des données sur Internet. Après avoir initialement pensé faire cette recherche à une très larche échelle, en tapant par exemple une recherche sur Duckduck Go et en examinant les dix premiers liens, puis les sous-liens présents dans ces liens, et ainsi de suite, nous avons décidé de nous focaliser plutôt sur quelques sites. Pour chacun de ces sites, nous avons construit un scraper adapté, qui va donc récupérer régulièrement les informations sur ce site, les mettre en forme, et les transmettre à la base de données.
+
+==== Site concernés
+[.text-justify]
+- https://www.paris-friendly.fr/loisirs-paris/visite-paris
+
+- https://paris.demosphere.net/#
+
+- https://www.benenova.fr/actions
+
+- https://www.airbnb.fr/s/experiences?click_referer=t%3ASEE_ALL%7Csid%3A153ebe1b-490f-496d-bab7-6474465ef89b%7Cst%3AEXPERIENCES_HIGHLIGHTED_CATEGORY_GROUPING&refinement_paths%5B%5D=%2Fexperiences%2FKG%2FTag%3A6951&last_search_session_id=153ebe1b-490f-496d-bab7-6474465ef89b&search_type=section_navigation
+
+==== Pistes d'amélioration
+[.text-justify]
+Désormais, l'objectif est d'augmenter le nombre de sites pris en charge, et d'automatiser réellement le processus, en déployant les scrapers sur un serveur, et en automatisant leur lancement.
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/arbutus_slab</item>
+        <item>@font/bungee_outline</item>
+        <item>@font/cinzel</item>
+        <item>@font/gabriela</item>
+        <item>@font/im_fell_french_canon</item>
+        <item>@font/kameron</item>
+    </array>
+</resources>

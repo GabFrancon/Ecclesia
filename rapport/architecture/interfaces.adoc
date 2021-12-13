@@ -1,0 +1,39 @@
+=== Description des interfaces
+
+==== Interface Utilisateur - API Facebook
+
+L’utilisateur se connecte sur Facebook à partir de l’interface afin d’y synchroniser ses amis. La requête (quelques octets) est envoyée ponctuellement (lorsque l’utilisateur souhaite actualiser sa liste d’amis).
+
+==== API Facebook - BDD
+
+Les profils des amis Facebook sont intégrés à la BDD (quelques Ko de texte) également de façon ponctuelle et non instantanée.
+
+==== GPS Téléphone - Interface Utilisateur
+
+Le GPS transmet les coordonnées de l’utilisateur afin que sa position soit visible sur l’interface. Il s’agit d’une latitude et une longitude pesant quelques dizaines d’octets, qui doivent être actualisées toutes les secondes.
+
+==== Interface Utilisateur - Mémoire Téléphone
+
+Les quelques Ko de données texte représentant le profil défini par l’utilisateur dans l’interface (nom, préférences) sont stockées dans la mémoire téléphone à chaque modification. Dans l’autre sens, l’historique des recherches/recommandations récentes (plusieurs Mo) est transmis à l’interface à la demande de l’utilisateur. La latence ne doit pas excéder une seconde.
+
+==== Mémoire Téléphone - Algorithme recommandation
+
+Les quelques Ko de données utilisateurs stockées dans la mémoire de façon indéfinie (profil, préférences) ou temporaire (position, historique récent) sont transmises au serveur afin d’être intégrées à l’algorithme de recommandation à chaque passage de l’utilisateur près d’un lieu hébergeant des projets (ne nécessite pas une transmission instantanée). Dans l’autre sens, les résultats de l’algorithme sont envoyés dans la mémoire. Il s’agit de quelques lignes de texte, quelques images et des liens hypertextes (plusieurs Mo) mais ne doivent pas être transmis instantanément.
+
+==== Algorithme de recommandation - BDD
+
+L’algorithme de recommandation, qui tourne chaque nuit ou lors du passage de l’utilisateur proche d’un lieu hébergeant des projets, vient piocher dans les projets catégorisés dans la BDD (images, résumé, liens hypertextes) représentant plusieurs Mo. Dans l’autre sens, le profil client, qui vient de la mémoire téléphone, transite par l’espace serveur dédié à la recommandation pour éventuellement être utilisé par l’algo de recommandation, puis est transféré vers la BDD (quelques Ko de texte) à chaque modification du profil.
+
+==== Interface Utilisateur - Réseau amis
+
+L’utilisateur envoie des suggestions à ses amis ou en reçoit au niveau de l’interface. La donnée transmise est l’id du projet ou du lieu dans la BDD, représentant donc quelques octets.
+
+==== Réseau amis - BDD
+
+L’id de la suggestion et les likes associés sont également intégrés dans la BDD (là aussi quelques octets d’entiers).
+
+==== Service web (API, Scraping) - BDD
+
+À partir du profil de l’utilisateur, une demande de recherche web est émise vers le Service Web durant les nuits et les sorties de l’utilisateur (quelques octets).
+En sens inverse, les données extraites du Web et triées sont envoyées vers la BDD. Il s’agit de texte, d’images et de liens hypertextes (plusieurs Mo) transmises là aussi chaque nuit ou lors des sorties de l’utilisateur.
+

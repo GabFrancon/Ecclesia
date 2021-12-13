@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_ecclesia">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/my_pref_areas"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center|left"
+        android:fontFamily="serif"
+        android:text="Mes centres d'intérêts"
+        android:textSize="16dp"
+        android:textColor="@color/grey_ecclesia"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/change_pref_area_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:background="@drawable/round_button"
+        android:foreground="@drawable/round_crop_circle"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/my_pref_areas"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPrefAreaActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/my_pref_areas"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/my_pref_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center|left"
+        android:fontFamily="serif"
+        android:text="Mes types de projet favoris"
+        android:textSize="16dp"
+        android:textColor="@color/grey_ecclesia"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewPrefAreaActivity"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/change_pref_category_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:background="@drawable/round_button"
+        android:foreground="@drawable/round_crop_circle"
+        app:layout_constraintLeft_toRightOf="@id/my_pref_categories"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewPrefAreaActivity"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPrefCategoryActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/my_pref_categories"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_preferences"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white_ecclesia">
+
+    <item
+        android:id="@+id/nav_maps"
+        android:icon="@drawable/map_nav_selector"
+        android:title="Carte" />
+
+    <item
+        android:id="@+id/nav_projects"
+        android:icon="@drawable/project_nav_selector"
+        android:title="Projets" />
+
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/notification_nav_selector"
+        android:title="Notifications" />
+
+    <item
+        android:id="@+id/nav_historic"
+        android:icon="@drawable/library_nav_selector"
+        android:title="Bibliothèque" />
+
+
+</menu>

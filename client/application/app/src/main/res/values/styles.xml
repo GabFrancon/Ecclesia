@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar" >
+        <item name="android:windowBackground">@color/white_ecclesia</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.LoginActivity">
+        <item name="android:windowAnimationStyle">@style/OpenWithFadeCloseWithFade</item>
+    </style>
+
+    <style name="AppTheme.SignInActivity">
+        <item name="android:windowAnimationStyle">@style/OpenFromRightCloseToRightAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.MainActivity">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/OpenFromRightCloseToRightAnimation</item>
+    </style>
+
+    <style name="AppTheme.ProjectActivity">
+        <item name="android:windowAnimationStyle">@style/OpenFromRightCloseToRightAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.SearchProjectActivity">
+        <item name="android:windowAnimationStyle">@style/OpenFromRightCloseToRightAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.ProfileActivity">
+        <item name="android:windowAnimationStyle">@style/OpenFromRightCloseToRightAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.PreferenceActivity">
+        <item name="android:windowAnimationStyle">@style/OpenFromRightCloseToRightAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.SettingsActivity">
+        <item name="android:windowAnimationStyle">@style/OpenFromRightCloseToRightAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.ContactsActivity">
+        <item name="android:windowAnimationStyle">@style/OpenFromRightCloseToRightAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.ChangeEmailActivity">
+        <item name="android:windowAnimationStyle">@style/OpenFromRightCloseToRightAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.ChangePasswordActivity">
+        <item name="android:windowAnimationStyle">@style/OpenFromRightCloseToRightAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.ChangeNotifActivity">
+        <item name="android:windowAnimationStyle">@style/OpenFromRightCloseToRightAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="OpenFromRightCloseToRightAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="OpenWithFadeCloseWithFade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="OpenWithFadeCloseToRight" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/black_ecclesia</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabIconTint">@drawable/tab_nav_color</item>
+        <item name="tabSelectedTextColor">@color/black_ecclesia</item>
+    </style>
+
+    <!-- for text -->
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/grey_ecclesia</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:fontFamily">@font/kameron</item>
+    </style>
+
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">@font/kameron</item>
+    </style>
+
+    <style name="CustomCheckbox02" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <!-- TOOLBAR THEME -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- Color of the title text in the Toolbar -->
+        <item name="android:textColorPrimary">@color/white_ecclesia</item>
+    </style>
+
+    <!-- TOOLBAR TITLE THEME -->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/cinzel</item>
+    </style>
+
+    <!-- PROGRESS BAR THEME -->
+    <style name="AppTheme.ProgressBarColor">
+        <item name="colorAccent">@color/purple_ecclesia</item>
+    </style>
+
+
+</resources>
