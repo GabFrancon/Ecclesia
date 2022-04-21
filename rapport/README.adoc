@@ -38,14 +38,14 @@ ifdef::env-gitlab,env-browser[:outfilesuffix: .adoc]
 
 *_E-cclesia_* est une application pour smartphone permettant à ses utilisateurs de prendre part aux activités citoyennes, sociales et culturelles de son environnement géographique. Elle recense de nombreux projets dans sa base de données, stockés avec des informations sur leur position géographique, leur nature et le thème auquel ils se rattachent. À l’aide d’un système de suivi géographique, chaque utilisateur peut alors prendre connaissance des projets et évènements, proches de son lieu de vie ou situés sur ses trajets quotidiens. Il peut ensuite choisir d’interagir avec ceux-ci - en signant une pétition, en les soutenant financièrement, en réservant des billets pour y participer, etc - s’il les juge intéressants, ou bien de les partager avec d’autres utilisateurs comme sur n’importe quel réseau social. Ainsi, un algorithme personnalisé, basé sur cette interaction, et interne à l’application, permettra de lui faire des propositions susceptibles de l’intéresser. +
 
-Ce projet répond bien à la problématique du numérique au service de l’humain. En effet il offre la possibilité à un individu, par le biais d’un dispositif numérique, de développer sa vie citoyenne, sociale et culturelle. *_E-cclesia_* rend la démocratie accessible à tous en permettant aussi à chacun de partager ses propres idées et projets. 
+Ce projet répond bien à la problématique du numérique au service de l’humain. En effet il offre la possibilité à un individu, par le biais d’un dispositif numérique, de développer sa vie citoyenne, sociale et culturelle. *_E-cclesia_* rend la démocratie accessible à tous en permettant aussi à chacun de partager ses propres idées et projets.
 
 [.text-justify]
 == English Summary (PAN1)
 
-*_E-cclesia_* is an app for smartphones which allows its users to take part in citizen, social and cultural activities geographically close to them. It counts numerous projects in its database, which are stocked with information about their location, nature and the theme to which they relate. With the help of a location tracking system, each user is able to learn about projects or events, located nearby their living place or on their daily commute. They can then choose to interact with those - by signing a petition, financially supporting them, booking tickets to participate, etc. - if they find them of any interest, or even to share them with other users as on any kind of social network. Within the application, a personalized algorithm based on this interaction can thus offer suggestions likely to awaken the users’ interests. + 
+*_E-cclesia_* is an app for smartphones which allows its users to take part in citizen, social and cultural activities geographically close to them. It counts numerous projects in its database, which are stocked with information about their location, nature and the theme to which they relate. With the help of a location tracking system, each user is able to learn about projects or events, located nearby their living place or on their daily commute. They can then choose to interact with those - by signing a petition, financially supporting them, booking tickets to participate, etc. - if they find them of any interest, or even to share them with other users as on any kind of social network. Within the application, a personalized algorithm based on this interaction can thus offer suggestions likely to awaken the users’ interests. +
 
-This project is consistent with the digital world in the service of humankind. It indeed offers to anyone the possibility to develop their citizen, social and cultural life through a digital device. *_E-cclesia_* makes democracy accessible to all by allowing them to share their own ideas and projects as well. 
+This project is consistent with the digital world in the service of humankind. It indeed offers to anyone the possibility to develop their citizen, social and cultural life through a digital device. *_E-cclesia_* makes democracy accessible to all by allowing them to share their own ideas and projects as well.
 
 
 
@@ -108,16 +108,16 @@ include::References.adoc[Bibliographie]
 
 == Annexes
 
-include::annexes/modifications.adoc[Modifications (PAN2+)] 
+include::annexes/modifications.adoc[Modifications (PAN2+)]
 
-include::annexes/moduleAndroid.adoc[Avancement module Android]
+include::annexes/module_android.adoc[Avancement module Android]
 
-include::annexes/module classification automatique et traitement du langage.adoc[Avancement module Classification automatique et Traitement du langage]
+include::annexes/module_classification_automatique.adoc[Avancement module Classification automatique et Traitement du langage]
 
-include::annexes/Module_Recherche_WEB.adoc[Avancement module Recheche Web]
+include::annexes/module_recherche_web.adoc[Avancement module Recheche Web]
 
-include::annexes/moduleBDD.adoc[Avancement module Base de données]
+include::annexes/module_BDD.adoc[Avancement module Base de données]
 
-include::annexes/moduleSocial.adoc[Avancement module Social]
+include::annexes/module_social.adoc[Avancement module Social]
 
-include::annexes/moduleTI.adoc[Avancement module Tests & Intégration]
+include::annexes/module_TI.adoc[Avancement module Tests & Intégration]
