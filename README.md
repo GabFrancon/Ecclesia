@@ -1,31 +1,9 @@
-04/11/2020 : fin ajout documents pour le PAN1
+***
+<img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/Poster.pdf" height="auto" width="800"/>
 
+***
 
+E-cclesia is an app for smartphones which allows its users to take part in citizen, social and cultural activities geographically close to them. It counts numerous projects in its database, which are stocked with information about their location, nature and the theme to which they relate. With the help of a location tracking system, each user is able to learn about projects or events, located nearby their living place or on their daily commute. They can then choose to interact with those - by signing a petition, financially supporting them, booking tickets to participate, etc. - if they find them of any interest, or even to share them with other users as on any kind of social network. Within the application, a personalized algorithm based on this interaction can thus offer suggestions likely to awaken the users’ interests.
 
-Ceci est votre dépôt pour le projet PACT.
+This project is consistent with the digital world in the service of humankind. It indeed offers to anyone the possibility to develop their citizen, social and cultural life through a digital device. E-cclesia makes democracy accessible to all by allowing them to share their own ideas and projects as well.
 
-**N'hésitez pas à modifier ce fichier pour décrire votre projet et son
-organisation**
-
-Vous **DEVEZ** modifier ce fichier (`README.md`) et créer tous les
-répertoires et fichiers dont vous aurez besoin pour votre projet.
-
-# Important, le rapport d'avancement
-
-Le répertoire `rapport` contient un squelette pour votre rapporte d'avancement.
-Ce répertoire **ne doit pas être renommé** ni le fichier `README.adoc` qu'il contient.
-Le fichier `README.adoc` est le point d'entrée du rapport.
-
-Il est rédigé  en utilisant le langage [**AsciiDoc**](http://asciidoc.org/).
-La syntaxe est supportée par GitLab qui le formatera correctement dans l'interface Web.
-
-Le document final sera généré en utilisant l'outil [Asciidoctor](http://asciidoctor.org/) qui supporte les même extensions que GitLab (pour les équations par exemple).
-Un résumé de la syntaxe supportée est accessible [ici](http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/).
-
-Vous pouvez éditer les différents fichiers en utilisant *votre éditeur de texte favori*.
-Si vous n'en avez pas, vous pouvez, par exemple utiliser:
-
-- [**Visual Studio Code**](https://code.visualstudio.com/) avec l'extension [AsciiDoc](https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode) qui joute coloration syntaxique et rendu en temps réel.
-- [**Atom**](https://atom.io/) avec le paquet [AsciiDoc Assistant](https://atom.io/packages/asciidoc-assistant)
-- **Sublim Text**, **Vim**, **Emacs**,…
-- Une extension pour navigateur Web est aussi disponible pour visualiser le résultat([**ici**](https://asciidoctor.org/docs/editing-asciidoc-with-live-preview/#using-a-web-browser-preview-only)).
