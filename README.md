@@ -22,10 +22,10 @@ This project is consistent with the digital world in the service of humankind. I
     <td><strong>Swipe between events</strong></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/map.gif" height="440" width="300"/></td>
-    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/scroll_selection.gif" height="440" width="300"/></td>
-    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/scroll_decouvrir.gif" height="440" width="300"/></td>
-    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/swipe.gif" height="440" width="300"/></td>
+    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/map.gif" height="400" width="300"/></td>
+    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/scroll_selection.gif" height="400" width="300"/></td>
+    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/scroll_decouvrir.gif" height="400" width="300"/></td>
+    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/swipe.gif" height="400" width="300"/></td>
   </tr>
 </table>
 <table>
@@ -36,10 +36,10 @@ This project is consistent with the digital world in the service of humankind. I
     <td><strong>Find more about an event</strong></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/save.gif" height="440" width="300"/></td>
-    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/notification.gif" height="440" width="300"/></td>
-    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/share.gif" height="440" width="300"/></td>
-    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/en_savoir_plus.gif" height="440" width="300"/></td>
+    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/save.gif" height="400" width="300"/></td>
+    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/notification.gif" height="400" width="300"/></td>
+    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/share.gif" height="400" width="300"/></td>
+    <td><img src="https://github.com/GabFrancon/Ecclesia/blob/master/communication/en_savoir_plus.gif" height="400" width="300"/></td>
   </tr>
 </table>
 
