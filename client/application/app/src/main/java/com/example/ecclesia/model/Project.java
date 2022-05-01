@@ -3,7 +3,6 @@ package com.example.ecclesia.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.google.android.gms.maps.model.LatLng;
 
@@ -15,6 +14,8 @@ import java.util.ArrayList;
 
 public class Project implements Parcelable
 {
+    static String apiKey = ""; // here precise the google maps API key
+
     String mID;
     String mTitle;
     String mPicture;
@@ -341,14 +342,12 @@ public class Project implements Parcelable
     public String getAddress()
     {
         int i = mPlace.indexOf(",");
-        if (i>-1)
-        {
+        if (i>-1) {
             try {
                 return mPlace.substring(i+2);
             } catch (StringIndexOutOfBoundsException e) {return "";}
         }
-        else
-        {
+        else {
             return "";
         }
     }
@@ -357,13 +356,12 @@ public class Project implements Parcelable
     {
         String url="";
         int zoom = 13;
-        if (!mPlace.contains(","))
-        {
+
+        if (!mPlace.contains(",")) {
             zoom=8;
         }
-        if (mGeolocation.latitude!=0)
-        {
-            url = "https://maps.googleapis.com/maps/api/staticmap?size=420x300&zoom="+zoom+"&markers=color:0x09C1CA%7C"+mGeolocation.latitude+","+mGeolocation.longitude+"&key=AIzaSyDpXLnsFkVpfJo5k7dwE7XJmjoLNDKHuJQ";
+        if (mGeolocation.latitude!=0) {
+            url = "https://maps.googleapis.com/maps/api/staticmap?size=420x300&zoom="+zoom+"&markers=color:0x09C1CA%7C"+mGeolocation.latitude+","+mGeolocation.longitude+"&key="+apiKey;
         }
         return url;
     }

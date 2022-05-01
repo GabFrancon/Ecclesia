@@ -8,6 +8,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a06f818e758373db778113a724843f2e/jetified-facebook-core-5.0.0/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a06f818e758373db778113a724843f2e/jetified-facebook-core-5.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a06f818e758373db778113a724843f2e/jetified-facebook-core-5.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/022873bb8b4af38932b5d5dbe8a96275/jetified-facebook-core-5.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/022873bb8b4af38932b5d5dbe8a96275/jetified-facebook-core-5.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/022873bb8b4af38932b5d5dbe8a96275/jetified-facebook-core-5.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-core/5.0.0/7aad516418b22b72b24ff7f48175c6770c066d01/facebook-core-5.0.0-javadoc.jar!/" />

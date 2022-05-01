@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3c26ca872923a5721cabd73088f0adcc/jetified-recyclerrefreshlayout-2.0.5/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3c26ca872923a5721cabd73088f0adcc/jetified-recyclerrefreshlayout-2.0.5/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3c26ca872923a5721cabd73088f0adcc/jetified-recyclerrefreshlayout-2.0.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53d34bf60264812a68e255ab54ec3d8c/jetified-recyclerrefreshlayout-2.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53d34bf60264812a68e255ab54ec3d8c/jetified-recyclerrefreshlayout-2.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/53d34bf60264812a68e255ab54ec3d8c/jetified-recyclerrefreshlayout-2.0.5/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
