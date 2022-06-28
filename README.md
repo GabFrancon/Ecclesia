@@ -16,30 +16,30 @@ This project is consistent with the digital world in the service of humankind. I
 
 <table>
   <tr>
-    <td><strong>Use the map screen</strong></td>
-    <td><strong>Explore the selection of the day for the user</strong></td>
-    <td><strong>Scroll the discover page</strong></td>
-    <td><strong>Swipe between events</strong></td>
+    <td align="center"><strong>Use the map screen</strong></td>
+    <td align="center"><strong>Explore today's selection</strong></td>
+    <td align="center"><strong>Scroll the discover page</strong></td>
+    <td align="center"><strong>Swipe between events</strong></td>
   </tr>
   <tr>
-    <td><img src="./communication/map.gif" height="400" width="300"/></td>
-    <td><img src="./communication/scroll_selection.gif" height="400" width="300"/></td>
-    <td><img src="./communication/scroll_decouvrir.gif" height="400" width="300"/></td>
-    <td><img src="./communication/swipe.gif" height="400" width="300"/></td>
+    <td align="center"><img src="./communication/map.gif" height="430" width="300"/></td>
+    <td align="center"><img src="./communication/scroll_selection.gif" height="430" width="300"/></td>
+    <td align="center"><img src="./communication/scroll_decouvrir.gif" height="430" width="300"/></td>
+    <td align="center"><img src="./communication/swipe.gif" height="430" width="300"/></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td><strong>Add an event to the favorites</strong></td>
-    <td><strong>Handle notifications</strong></td>
-    <td><strong>Share an event with friends</strong></td>
-    <td><strong>Find more about an event</strong></td>
+    <td align="center"><strong>Add event to favorites</strong></td>
+    <td align="center"><strong>Handle notifications</strong></td>
+    <td align="center"><strong>Share event with friends</strong></td>
+    <td align="center"><strong>Find more about an event</strong></td>
   </tr>
   <tr>
-    <td><img src="./communication/save.gif" height="400" width="300"/></td>
-    <td><img src="./communication/notification.gif" height="400" width="300"/></td>
-    <td><img src="./communication/share.gif" height="400" width="300"/></td>
-    <td><img src="./communication/en_savoir_plus.gif" height="400" width="300"/></td>
+    <td align="center"><img src="./communication/save.gif" height="430" width="300"/></td>
+    <td align="center"><img src="./communication/notification.gif" height="430" width="300"/></td>
+    <td align="center"><img src="./communication/share.gif" height="430" width="300"/></td>
+    <td align="center"><img src="./communication/en_savoir_plus.gif" height="430" width="300"/></td>
   </tr>
 </table>
 
